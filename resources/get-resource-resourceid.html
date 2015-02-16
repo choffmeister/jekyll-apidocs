@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>/resource/{resourceId}</title>
+  <meta name="description" content="Welcome to the Developer Program. You'll find comprehensive guides and documentation to help you start working with Developer Program as quickly as possible, as well as support if you get stuck. Let's jump right in!
+">
+
+  <link rel="stylesheet" href="/jekyll-apidocs/assets/styles/main.css">
+  <link rel="canonical" href="https://choffmeister.github.io/jekyll-apidocs/resources/get-resource-resourceid.html">
+
+  <script type="text/javascript" src="/jekyll-apidocs/assets/javascript/jquery.js"></script>
+  <script type="text/javascript" src="/jekyll-apidocs/assets/javascript/bootstrap.js"></script>
+</head>
+
+  <body>
+    <div class="github-fork-ribbon-wrapper right-bottom hidden-xs">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/choffmeister/jekyll-apidocs">Fork me on GitHub</a>
+  </div>
+</div>
+
+    <nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/jekyll-apidocs/">
+        My Company
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 hidden-xs">
+        <ul id="sitemap">
+        
+          <li class="sitemap-headline">Introduction</li>
+          
+            
+          
+            
+          
+            
+              <li class="sitemap-entry">
+                <a href="/jekyll-apidocs/pages/introduction.html">Basics</a>
+                
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+          <li class="sitemap-headline">Miscellaneous</li>
+          
+            
+              <li class="sitemap-entry">
+                <a href="/jekyll-apidocs/pages/anotherpage.html">Another page</a>
+                
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+          <li class="sitemap-headline">API Reference</li>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <li class="sitemap-entry">
+                <a href="/jekyll-apidocs/pages/resources.html">Resources</a>
+                <span class="label label-danger">HOT</span>
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <article>
+          <h1>/resource/{resourceId}</h1>
+          <div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#specification" aria-controls="specification" role="tab" data-toggle="tab">Specification</a></li>
+    <li role="presentation"><a href="#apiconsole" aria-controls="apiconsole" role="tab" data-toggle="tab">API console</a></li>
+    <li role="presentation"><a href="#rawdata" aria-controls="rawdata" role="tab" data-toggle="tab">RAW data</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="specification">
+      <h2>Basic information</h2>
+      <pre>GET /resource/{resourceId}</pre>
+
+      
+        <p><p>This is a resource description <em>with</em> some <em>markdown</em> embedded in it</p>
+</p>
+      
+      
+        <p><p>Instagram’s API uses the <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-12">OAuth 2.0 protocol</a> for simple, but effective authentication and authorization. OAuth 2.0 is much easier to use than previous schemes; developers can start using the Instagram API almost immediately. The one thing to keep in mind is that all requests to the API must be made over SSL (https:// not http://)</p>
+
+<h2 id="do-you-need-to-authenticate">Do you need to authenticate?</h2>
+
+<p>For the most part, Instagram’s API only requires the use of a <em>client_id). A client_id simply associates your server, script, or program with a specific application. However, some requests require authentication - specifically requests made on behalf of a user. Authenticated requests require an _access_token</em>. These tokens are unique to a user and should be stored securely. Access tokens may expire at any time in the future.</p>
+
+<p>Note that in many situations, you may not need to authenticate users at all. For instance, you may request popular photos without authenticating (i.e. you do not need to provide an access_token; just use your client ID with your request). We only require authentication in cases where your application is making requests on behalf of a user (commenting, liking, browsing a user’s feed, etc.).</p>
+
+<h2 id="receiving-an-accesstoken">Receiving an access_token</h2>
+</p>
+      
+
+      
+        <h2>URI parameters</h2>
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          
+            
+            <tr>
+              <td><code>resourceId</code></td>
+              <td><strong>string</strong></td>
+              <td>
+                <div>Description: Which resoure would you like to view</div>
+                <div>Required: <code>true</code></div>
+                
+                
+                
+                
+                
+                
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
+      
+
+      
+        <h2>Query parameters</h2>
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          
+            
+            <tr>
+              <td><code>filter</code></td>
+              <td><strong>string</strong></td>
+              <td>
+                <div>Description: What to filter</div>
+                <div>Required: <code>true</code></div>
+                
+                
+                
+                
+                
+                
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
+      
+
+      
+
+      
+        <h2>Responses</h2>
+        
+          
+          <h3>HTTP 200 </h3>
+          
+
+          
+        
+      
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="apiconsole">
+      <h2>Parameters</h2>
+      <form id="apiconsole-form" class="form">
+        
+          
+          <div class="form-group">
+            <label class="control-label" for="parameter-uri-resourceId">resourceId</label>
+            <input class="form-control" type="text" id="parameter-uri-resourceId" value=""/>
+            
+              <span class="help-block">Which resoure would you like to view
+</span>
+            
+          </div>
+        
+        
+          
+          <div class="form-group">
+            <label class="control-label" for="parameter-query-filter">filter</label>
+            <input type="text" class="form-control" id="parameter-query-filter" value=""/>
+            
+              <span class="help-block">What to filter
+</span>
+            
+          </div>
+        
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Send</button>
+        </div>
+      </form>
+
+      <h2>Request</h2>
+      <pre id="apiconsole-request"></pre>
+
+      <h2>Response</h2>
+      <pre id="apiconsole-response">(Click Send...)</pre>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="rawdata">
+      <h2>Resource</h2>
+      <pre>{
+  "absolute_uri": "http://api.mycompany.com/resource/{resourceId}",
+  "relative_uri": "/resource/{resourceId}",
+  "display_name": "/resource/{resourceId}",
+  "description": "This is a resource description *with* some _markdown_ embedded in it",
+  "uri_parameters": {
+    "resourceId": {
+      "name": "resourceId",
+      "type": "string",
+      "display_name": "resourceId",
+      "description": "Which resoure would you like to view",
+      "required": true,
+      "default": null,
+      "example": null,
+      "min_length": null,
+      "max_length": null,
+      "minimum": null,
+      "maximum": null,
+      "repeat": null,
+      "enum": [
+
+      ],
+      "pattern": null
+    }
+  },
+  "methods": {
+    "get": {
+      "method": "GET",
+      "display_name": "GET /resource/{resourceId}",
+      "description": "Instagram’s API uses the [OAuth 2.0 protocol](http://tools.ietf.org/html/draft-ietf-oauth-v2-12) for simple, but effective authentication and authorization. OAuth 2.0 is much easier to use than previous schemes; developers can start using the Instagram API almost immediately. The one thing to keep in mind is that all requests to the API must be made over SSL (https:// not http://)\n\n## Do you need to authenticate?\n\nFor the most part, Instagram’s API only requires the use of a _client_id). A client_id simply associates your server, script, or program with a specific application. However, some requests require authentication - specifically requests made on behalf of a user. Authenticated requests require an _access_token_. These tokens are unique to a user and should be stored securely. Access tokens may expire at any time in the future.\n\nNote that in many situations, you may not need to authenticate users at all. For instance, you may request popular photos without authenticating (i.e. you do not need to provide an access_token; just use your client ID with your request). We only require authentication in cases where your application is making requests on behalf of a user (commenting, liking, browsing a user’s feed, etc.).\n\n## Receiving an access_token\n",
+      "query_parameters": {
+        "filter": {
+          "name": "filter",
+          "type": "string",
+          "display_name": "filter",
+          "description": "What to filter",
+          "required": true,
+          "default": null,
+          "example": null,
+          "min_length": null,
+          "max_length": null,
+          "minimum": null,
+          "maximum": null,
+          "repeat": null,
+          "enum": [
+
+          ],
+          "pattern": null
+        }
+      },
+      "responses": {
+        "200": {
+          "status_code": 200,
+          "display_name": null,
+          "description": null,
+          "bodies": {
+          },
+          "headers": {
+          }
+        }
+      },
+      "bodies": {
+      },
+      "headers": {
+      },
+      "is": {
+      },
+      "secured_by": [
+
+      ]
+    },
+    "post": {
+      "method": "POST",
+      "display_name": "POST /resource/{resourceId}",
+      "description": null,
+      "query_parameters": {
+      },
+      "responses": {
+        "200": {
+          "status_code": 200,
+          "display_name": null,
+          "description": null,
+          "bodies": {
+          },
+          "headers": {
+          }
+        },
+        "201": {
+          "status_code": 201,
+          "display_name": null,
+          "description": null,
+          "bodies": {
+          },
+          "headers": {
+          }
+        },
+        "203": {
+          "status_code": 203,
+          "display_name": null,
+          "description": null,
+          "bodies": {
+          },
+          "headers": {
+          }
+        }
+      },
+      "bodies": {
+        "application/json": {
+          "media_type": "application/json",
+          "example": null,
+          "schema": null,
+          "form_parameters": {
+          }
+        },
+        "application/x-www-form-urlencoded": {
+          "media_type": "application/x-www-form-urlencoded",
+          "example": null,
+          "schema": null,
+          "form_parameters": {
+            "name": {
+              "name": "name",
+              "type": "string",
+              "display_name": "name",
+              "description": "The name of the resource to create",
+              "required": true,
+              "default": null,
+              "example": "Comment",
+              "min_length": null,
+              "max_length": null,
+              "minimum": null,
+              "maximum": null,
+              "repeat": null,
+              "enum": [
+
+              ],
+              "pattern": null
+            },
+            "description": {
+              "name": "description",
+              "type": "string",
+              "display_name": "description",
+              "description": "A description of the resource to create",
+              "required": true,
+              "default": null,
+              "example": "User-generated content pertinent to the associated blog post",
+              "min_length": null,
+              "max_length": null,
+              "minimum": null,
+              "maximum": null,
+              "repeat": null,
+              "enum": [
+
+              ],
+              "pattern": null
+            }
+          }
+        },
+        "multipart/form-data": {
+          "media_type": "multipart/form-data",
+          "example": null,
+          "schema": null,
+          "form_parameters": {
+            "name": {
+              "name": "name",
+              "type": "string",
+              "display_name": "name",
+              "description": "The name of the resource to create",
+              "required": true,
+              "default": null,
+              "example": "Comment",
+              "min_length": null,
+              "max_length": null,
+              "minimum": null,
+              "maximum": null,
+              "repeat": null,
+              "enum": [
+
+              ],
+              "pattern": null
+            },
+            "description": {
+              "name": "description",
+              "type": "string",
+              "display_name": "description",
+              "description": "A description of the resource to create",
+              "required": true,
+              "default": null,
+              "example": "User-generated content pertinent to the associated blog post",
+              "min_length": null,
+              "max_length": null,
+              "minimum": null,
+              "maximum": null,
+              "repeat": null,
+              "enum": [
+
+              ],
+              "pattern": null
+            }
+          }
+        }
+      },
+      "headers": {
+      },
+      "is": {
+      },
+      "secured_by": [
+
+      ]
+    }
+  },
+  "type": {
+  },
+  "is": {
+  },
+  "secured_by": [
+
+  ]
+}</pre>
+      <h2>Method</h2>
+      <pre>{
+  "method": "GET",
+  "display_name": "GET /resource/{resourceId}",
+  "description": "Instagram’s API uses the [OAuth 2.0 protocol](http://tools.ietf.org/html/draft-ietf-oauth-v2-12) for simple, but effective authentication and authorization. OAuth 2.0 is much easier to use than previous schemes; developers can start using the Instagram API almost immediately. The one thing to keep in mind is that all requests to the API must be made over SSL (https:// not http://)\n\n## Do you need to authenticate?\n\nFor the most part, Instagram’s API only requires the use of a _client_id). A client_id simply associates your server, script, or program with a specific application. However, some requests require authentication - specifically requests made on behalf of a user. Authenticated requests require an _access_token_. These tokens are unique to a user and should be stored securely. Access tokens may expire at any time in the future.\n\nNote that in many situations, you may not need to authenticate users at all. For instance, you may request popular photos without authenticating (i.e. you do not need to provide an access_token; just use your client ID with your request). We only require authentication in cases where your application is making requests on behalf of a user (commenting, liking, browsing a user’s feed, etc.).\n\n## Receiving an access_token\n",
+  "query_parameters": {
+    "filter": {
+      "name": "filter",
+      "type": "string",
+      "display_name": "filter",
+      "description": "What to filter",
+      "required": true,
+      "default": null,
+      "example": null,
+      "min_length": null,
+      "max_length": null,
+      "minimum": null,
+      "maximum": null,
+      "repeat": null,
+      "enum": [
+
+      ],
+      "pattern": null
+    }
+  },
+  "responses": {
+    "200": {
+      "status_code": 200,
+      "display_name": null,
+      "description": null,
+      "bodies": {
+      },
+      "headers": {
+      }
+    }
+  },
+  "bodies": {
+  },
+  "headers": {
+  },
+  "is": {
+  },
+  "secured_by": [
+
+  ]
+}</pre>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/jekyll-apidocs/assets/javascript/apiconsole.js"></script>
+<script type="text/javascript">
+  var ramlResource = {"absolute_uri":"http://api.mycompany.com/resource/{resourceId}","relative_uri":"/resource/{resourceId}","display_name":"/resource/{resourceId}","description":"This is a resource description *with* some _markdown_ embedded in it","uri_parameters":{"resourceId":{"name":"resourceId","type":"string","display_name":"resourceId","description":"Which resoure would you like to view","required":true,"default":null,"example":null,"min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}},"methods":{"get":{"method":"GET","display_name":"GET /resource/{resourceId}","description":"Instagram’s API uses the [OAuth 2.0 protocol](http://tools.ietf.org/html/draft-ietf-oauth-v2-12) for simple, but effective authentication and authorization. OAuth 2.0 is much easier to use than previous schemes; developers can start using the Instagram API almost immediately. The one thing to keep in mind is that all requests to the API must be made over SSL (https:// not http://)\n\n## Do you need to authenticate?\n\nFor the most part, Instagram’s API only requires the use of a _client_id). A client_id simply associates your server, script, or program with a specific application. However, some requests require authentication - specifically requests made on behalf of a user. Authenticated requests require an _access_token_. These tokens are unique to a user and should be stored securely. Access tokens may expire at any time in the future.\n\nNote that in many situations, you may not need to authenticate users at all. For instance, you may request popular photos without authenticating (i.e. you do not need to provide an access_token; just use your client ID with your request). We only require authentication in cases where your application is making requests on behalf of a user (commenting, liking, browsing a user’s feed, etc.).\n\n## Receiving an access_token\n","query_parameters":{"filter":{"name":"filter","type":"string","display_name":"filter","description":"What to filter","required":true,"default":null,"example":null,"min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}},"responses":{"200":{"status_code":200,"display_name":null,"description":null,"bodies":{},"headers":{}}},"bodies":{},"headers":{},"is":{},"secured_by":[]},"post":{"method":"POST","display_name":"POST /resource/{resourceId}","description":null,"query_parameters":{},"responses":{"200":{"status_code":200,"display_name":null,"description":null,"bodies":{},"headers":{}},"201":{"status_code":201,"display_name":null,"description":null,"bodies":{},"headers":{}},"203":{"status_code":203,"display_name":null,"description":null,"bodies":{},"headers":{}}},"bodies":{"application/json":{"media_type":"application/json","example":null,"schema":null,"form_parameters":{}},"application/x-www-form-urlencoded":{"media_type":"application/x-www-form-urlencoded","example":null,"schema":null,"form_parameters":{"name":{"name":"name","type":"string","display_name":"name","description":"The name of the resource to create","required":true,"default":null,"example":"Comment","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null},"description":{"name":"description","type":"string","display_name":"description","description":"A description of the resource to create","required":true,"default":null,"example":"User-generated content pertinent to the associated blog post","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}}},"multipart/form-data":{"media_type":"multipart/form-data","example":null,"schema":null,"form_parameters":{"name":{"name":"name","type":"string","display_name":"name","description":"The name of the resource to create","required":true,"default":null,"example":"Comment","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null},"description":{"name":"description","type":"string","display_name":"description","description":"A description of the resource to create","required":true,"default":null,"example":"User-generated content pertinent to the associated blog post","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}}}},"headers":{},"is":{},"secured_by":[]}},"type":{},"is":{},"secured_by":[]}
+  var ramlMethod = {"method":"GET","display_name":"GET /resource/{resourceId}","description":"Instagram’s API uses the [OAuth 2.0 protocol](http://tools.ietf.org/html/draft-ietf-oauth-v2-12) for simple, but effective authentication and authorization. OAuth 2.0 is much easier to use than previous schemes; developers can start using the Instagram API almost immediately. The one thing to keep in mind is that all requests to the API must be made over SSL (https:// not http://)\n\n## Do you need to authenticate?\n\nFor the most part, Instagram’s API only requires the use of a _client_id). A client_id simply associates your server, script, or program with a specific application. However, some requests require authentication - specifically requests made on behalf of a user. Authenticated requests require an _access_token_. These tokens are unique to a user and should be stored securely. Access tokens may expire at any time in the future.\n\nNote that in many situations, you may not need to authenticate users at all. For instance, you may request popular photos without authenticating (i.e. you do not need to provide an access_token; just use your client ID with your request). We only require authentication in cases where your application is making requests on behalf of a user (commenting, liking, browsing a user’s feed, etc.).\n\n## Receiving an access_token\n","query_parameters":{"filter":{"name":"filter","type":"string","display_name":"filter","description":"What to filter","required":true,"default":null,"example":null,"min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}},"responses":{"200":{"status_code":200,"display_name":null,"description":null,"bodies":{},"headers":{}}},"bodies":{},"headers":{},"is":{},"secured_by":[]}
+  ApiConsole(ramlResource, ramlMethod, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
+</script>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div id="footer-legal">
+      <div>
+        &copy; 2015 My Company
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

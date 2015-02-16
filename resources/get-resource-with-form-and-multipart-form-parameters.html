@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>/resource-with-form-and-multipart-form-parameters</title>
+  <meta name="description" content="Welcome to the Developer Program. You'll find comprehensive guides and documentation to help you start working with Developer Program as quickly as possible, as well as support if you get stuck. Let's jump right in!
+">
+
+  <link rel="stylesheet" href="/jekyll-apidocs/assets/styles/main.css">
+  <link rel="canonical" href="https://choffmeister.github.io/jekyll-apidocs/resources/get-resource-with-form-and-multipart-form-parameters.html">
+
+  <script type="text/javascript" src="/jekyll-apidocs/assets/javascript/jquery.js"></script>
+  <script type="text/javascript" src="/jekyll-apidocs/assets/javascript/bootstrap.js"></script>
+</head>
+
+  <body>
+    <div class="github-fork-ribbon-wrapper right-bottom hidden-xs">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/choffmeister/jekyll-apidocs">Fork me on GitHub</a>
+  </div>
+</div>
+
+    <nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/jekyll-apidocs/">
+        My Company
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 hidden-xs">
+        <ul id="sitemap">
+        
+          <li class="sitemap-headline">Introduction</li>
+          
+            
+          
+            
+          
+            
+              <li class="sitemap-entry">
+                <a href="/jekyll-apidocs/pages/introduction.html">Basics</a>
+                
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+          <li class="sitemap-headline">Miscellaneous</li>
+          
+            
+              <li class="sitemap-entry">
+                <a href="/jekyll-apidocs/pages/anotherpage.html">Another page</a>
+                
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+          <li class="sitemap-headline">API Reference</li>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <li class="sitemap-entry">
+                <a href="/jekyll-apidocs/pages/resources.html">Resources</a>
+                <span class="label label-danger">HOT</span>
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <article>
+          <h1>/resource-with-form-and-multipart-form-parameters</h1>
+          <div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#specification" aria-controls="specification" role="tab" data-toggle="tab">Specification</a></li>
+    <li role="presentation"><a href="#apiconsole" aria-controls="apiconsole" role="tab" data-toggle="tab">API console</a></li>
+    <li role="presentation"><a href="#rawdata" aria-controls="rawdata" role="tab" data-toggle="tab">RAW data</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="specification">
+      <h2>Basic information</h2>
+      <pre>GET /resource-with-form-and-multipart-form-parameters</pre>
+
+      
+      
+
+      
+
+      
+        <h2>Query parameters</h2>
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          
+            
+            <tr>
+              <td><code>some_query_param</code></td>
+              <td><strong>string</strong></td>
+              <td>
+                <div>Description: Your value for some thing.</div>
+                <div>Required: <code>true</code></div>
+                <div>Example: <code>my value</code></div>
+                
+                
+                
+                
+                
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
+      
+
+      
+        <h2>Request bodies</h2>
+        
+          
+          <p>Media type <code>application/json</code></p>
+          
+            <pre class="pre-scrollable">{
+  "api_key": "c4f820f0420a013ea143230c290fbf99",
+  ...
+}
+</pre>
+          
+        
+          
+          <p>Media type <code>application/x-www-form-urlencoded</code></p>
+          
+        
+          
+          <p>Media type <code>multipart/form-data</code></p>
+          
+        
+      
+
+      
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="apiconsole">
+      <h2>Parameters</h2>
+      <form id="apiconsole-form" class="form">
+        
+        
+          
+          <div class="form-group">
+            <label class="control-label" for="parameter-query-some_query_param">some_query_param</label>
+            <input type="text" class="form-control" id="parameter-query-some_query_param" value="my value"/>
+            
+              <span class="help-block">Your value for some thing.
+</span>
+            
+          </div>
+        
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Send</button>
+        </div>
+      </form>
+
+      <h2>Request</h2>
+      <pre id="apiconsole-request"></pre>
+
+      <h2>Response</h2>
+      <pre id="apiconsole-response">(Click Send...)</pre>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="rawdata">
+      <h2>Resource</h2>
+      <pre>{
+  "absolute_uri": "http://api.mycompany.com/resource-with-form-and-multipart-form-parameters",
+  "relative_uri": "/resource-with-form-and-multipart-form-parameters",
+  "display_name": "/resource-with-form-and-multipart-form-parameters",
+  "description": null,
+  "uri_parameters": {
+  },
+  "methods": {
+    "get": {
+      "method": "GET",
+      "display_name": "GET /resource-with-form-and-multipart-form-parameters",
+      "description": null,
+      "query_parameters": {
+        "some_query_param": {
+          "name": "some_query_param",
+          "type": "string",
+          "display_name": "Some Query Param",
+          "description": "Your value for some thing.",
+          "required": true,
+          "default": null,
+          "example": "my value",
+          "min_length": null,
+          "max_length": null,
+          "minimum": null,
+          "maximum": null,
+          "repeat": null,
+          "enum": [
+
+          ],
+          "pattern": null
+        }
+      },
+      "responses": {
+      },
+      "bodies": {
+        "application/json": {
+          "media_type": "application/json",
+          "example": "{\n  \"api_key\": \"c4f820f0420a013ea143230c290fbf99\",\n  ...\n}\n",
+          "schema": null,
+          "form_parameters": {
+          }
+        },
+        "application/x-www-form-urlencoded": {
+          "media_type": "application/x-www-form-urlencoded",
+          "example": null,
+          "schema": null,
+          "form_parameters": {
+            "api_key": {
+              "name": "api_key",
+              "type": "string",
+              "display_name": "API Key",
+              "description": "Your license key for the application. Please contact developer@nzpost.co.nz for a license key",
+              "required": true,
+              "default": null,
+              "example": "c4f820f0420a013ea143230c290fbf99",
+              "min_length": null,
+              "max_length": null,
+              "minimum": null,
+              "maximum": null,
+              "repeat": null,
+              "enum": [
+
+              ],
+              "pattern": null
+            }
+          }
+        },
+        "multipart/form-data": {
+          "media_type": "multipart/form-data",
+          "example": null,
+          "schema": null,
+          "form_parameters": {
+            "api_key": {
+              "name": "api_key",
+              "type": "string",
+              "display_name": "API Key",
+              "description": "Your license key for the application. Please contact developer@nzpost.co.nz for a license key",
+              "required": true,
+              "default": null,
+              "example": "c4f820f0420a013ea143230c290fbf99",
+              "min_length": null,
+              "max_length": null,
+              "minimum": null,
+              "maximum": null,
+              "repeat": null,
+              "enum": [
+
+              ],
+              "pattern": null
+            }
+          }
+        }
+      },
+      "headers": {
+      },
+      "is": {
+      },
+      "secured_by": [
+
+      ]
+    }
+  },
+  "type": {
+  },
+  "is": {
+  },
+  "secured_by": [
+
+  ]
+}</pre>
+      <h2>Method</h2>
+      <pre>{
+  "method": "GET",
+  "display_name": "GET /resource-with-form-and-multipart-form-parameters",
+  "description": null,
+  "query_parameters": {
+    "some_query_param": {
+      "name": "some_query_param",
+      "type": "string",
+      "display_name": "Some Query Param",
+      "description": "Your value for some thing.",
+      "required": true,
+      "default": null,
+      "example": "my value",
+      "min_length": null,
+      "max_length": null,
+      "minimum": null,
+      "maximum": null,
+      "repeat": null,
+      "enum": [
+
+      ],
+      "pattern": null
+    }
+  },
+  "responses": {
+  },
+  "bodies": {
+    "application/json": {
+      "media_type": "application/json",
+      "example": "{\n  \"api_key\": \"c4f820f0420a013ea143230c290fbf99\",\n  ...\n}\n",
+      "schema": null,
+      "form_parameters": {
+      }
+    },
+    "application/x-www-form-urlencoded": {
+      "media_type": "application/x-www-form-urlencoded",
+      "example": null,
+      "schema": null,
+      "form_parameters": {
+        "api_key": {
+          "name": "api_key",
+          "type": "string",
+          "display_name": "API Key",
+          "description": "Your license key for the application. Please contact developer@nzpost.co.nz for a license key",
+          "required": true,
+          "default": null,
+          "example": "c4f820f0420a013ea143230c290fbf99",
+          "min_length": null,
+          "max_length": null,
+          "minimum": null,
+          "maximum": null,
+          "repeat": null,
+          "enum": [
+
+          ],
+          "pattern": null
+        }
+      }
+    },
+    "multipart/form-data": {
+      "media_type": "multipart/form-data",
+      "example": null,
+      "schema": null,
+      "form_parameters": {
+        "api_key": {
+          "name": "api_key",
+          "type": "string",
+          "display_name": "API Key",
+          "description": "Your license key for the application. Please contact developer@nzpost.co.nz for a license key",
+          "required": true,
+          "default": null,
+          "example": "c4f820f0420a013ea143230c290fbf99",
+          "min_length": null,
+          "max_length": null,
+          "minimum": null,
+          "maximum": null,
+          "repeat": null,
+          "enum": [
+
+          ],
+          "pattern": null
+        }
+      }
+    }
+  },
+  "headers": {
+  },
+  "is": {
+  },
+  "secured_by": [
+
+  ]
+}</pre>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/jekyll-apidocs/assets/javascript/apiconsole.js"></script>
+<script type="text/javascript">
+  var ramlResource = {"absolute_uri":"http://api.mycompany.com/resource-with-form-and-multipart-form-parameters","relative_uri":"/resource-with-form-and-multipart-form-parameters","display_name":"/resource-with-form-and-multipart-form-parameters","description":null,"uri_parameters":{},"methods":{"get":{"method":"GET","display_name":"GET /resource-with-form-and-multipart-form-parameters","description":null,"query_parameters":{"some_query_param":{"name":"some_query_param","type":"string","display_name":"Some Query Param","description":"Your value for some thing.","required":true,"default":null,"example":"my value","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}},"responses":{},"bodies":{"application/json":{"media_type":"application/json","example":"{\n  \"api_key\": \"c4f820f0420a013ea143230c290fbf99\",\n  ...\n}\n","schema":null,"form_parameters":{}},"application/x-www-form-urlencoded":{"media_type":"application/x-www-form-urlencoded","example":null,"schema":null,"form_parameters":{"api_key":{"name":"api_key","type":"string","display_name":"API Key","description":"Your license key for the application. Please contact developer@nzpost.co.nz for a license key","required":true,"default":null,"example":"c4f820f0420a013ea143230c290fbf99","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}}},"multipart/form-data":{"media_type":"multipart/form-data","example":null,"schema":null,"form_parameters":{"api_key":{"name":"api_key","type":"string","display_name":"API Key","description":"Your license key for the application. Please contact developer@nzpost.co.nz for a license key","required":true,"default":null,"example":"c4f820f0420a013ea143230c290fbf99","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}}}},"headers":{},"is":{},"secured_by":[]}},"type":{},"is":{},"secured_by":[]}
+  var ramlMethod = {"method":"GET","display_name":"GET /resource-with-form-and-multipart-form-parameters","description":null,"query_parameters":{"some_query_param":{"name":"some_query_param","type":"string","display_name":"Some Query Param","description":"Your value for some thing.","required":true,"default":null,"example":"my value","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}},"responses":{},"bodies":{"application/json":{"media_type":"application/json","example":"{\n  \"api_key\": \"c4f820f0420a013ea143230c290fbf99\",\n  ...\n}\n","schema":null,"form_parameters":{}},"application/x-www-form-urlencoded":{"media_type":"application/x-www-form-urlencoded","example":null,"schema":null,"form_parameters":{"api_key":{"name":"api_key","type":"string","display_name":"API Key","description":"Your license key for the application. Please contact developer@nzpost.co.nz for a license key","required":true,"default":null,"example":"c4f820f0420a013ea143230c290fbf99","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}}},"multipart/form-data":{"media_type":"multipart/form-data","example":null,"schema":null,"form_parameters":{"api_key":{"name":"api_key","type":"string","display_name":"API Key","description":"Your license key for the application. Please contact developer@nzpost.co.nz for a license key","required":true,"default":null,"example":"c4f820f0420a013ea143230c290fbf99","min_length":null,"max_length":null,"minimum":null,"maximum":null,"repeat":null,"enum":[],"pattern":null}}}},"headers":{},"is":{},"secured_by":[]}
+  ApiConsole(ramlResource, ramlMethod, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
+</script>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div id="footer-legal">
+      <div>
+        &copy; 2015 My Company
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
